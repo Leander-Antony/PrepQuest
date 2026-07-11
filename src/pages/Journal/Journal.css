@@ -1,0 +1,68 @@
+/* src/pages/Journal/Journal.css */
+.journal-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.journal-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-lg);
+}
+
+.add-entry-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  height: fit-content;
+}
+
+.add-entry-form textarea {
+  width: 100%;
+}
+
+.entries-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.entry-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed var(--color-border);
+  padding-bottom: var(--spacing-sm);
+}
+
+.entry-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.entry-date {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  color: var(--color-primary);
+}
+
+.entry-text {
+  font-family: var(--font-pixel);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+  .journal-content {
+    grid-template-columns: 1fr;
+  }
+}

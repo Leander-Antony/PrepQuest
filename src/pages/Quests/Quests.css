@@ -1,0 +1,100 @@
+/* src/pages/Quests/Quests.css */
+.quests-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.quests-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quests-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-lg);
+}
+
+.add-quest-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  height: fit-content;
+}
+
+.add-quest-form input[type="text"] {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.form-row input[type="number"], .form-row select {
+  flex: 1;
+}
+
+.quests-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.quest-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+
+.quest-card.completed {
+  opacity: 0.6;
+  background-color: var(--color-bg-primary);
+}
+
+.quest-card.completed h4 {
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+}
+
+.quest-info h4 {
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-main);
+}
+
+.quest-meta {
+  display: flex;
+  gap: var(--spacing-md);
+  font-family: var(--font-pixel);
+  font-size: 1.1rem;
+}
+
+.quest-category {
+  color: var(--color-stone);
+  text-transform: uppercase;
+}
+
+.quest-xp {
+  color: var(--color-xp);
+}
+
+.quest-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-family: var(--font-pixel);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .quests-content {
+    grid-template-columns: 1fr;
+  }
+}

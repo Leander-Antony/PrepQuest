@@ -1,0 +1,169 @@
+/* src/pages/Dashboard/Dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  position: relative;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-stone);
+  border: var(--border-size) solid var(--border-color);
+  box-shadow: inset -4px -4px 0 rgba(0,0,0,0.3);
+}
+
+.streak-text {
+  color: var(--color-xp);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  margin-top: var(--spacing-sm);
+}
+
+.level-info {
+  min-width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.level-text {
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.xp-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: var(--color-coal);
+  border: var(--border-size) solid var(--border-color);
+  margin-bottom: var(--spacing-xs);
+  position: relative;
+  overflow: hidden;
+}
+
+.xp-bar-fill {
+  height: 100%;
+  background-color: var(--color-xp);
+  transition: width 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Shimmer effect for XP bar */
+.xp-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.xp-text {
+  font-family: var(--font-pixel);
+  color: var(--color-text-muted);
+}
+
+.level-up-anim {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 0 var(--color-coal);
+  animation: level-up 1s forwards;
+  pointer-events: none;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.dashboard-section h3 {
+  color: var(--color-primary);
+  border-bottom: 2px dashed var(--color-stone);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.quest-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.quest-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-md);
+  border: 2px solid var(--border-color);
+}
+
+.boss-placeholder {
+  text-align: center;
+}
+
+.hp-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: var(--color-coal);
+  border: 2px solid var(--border-color);
+  margin: var(--spacing-md) 0;
+}
+
+.hp-bar-fill {
+  height: 100%;
+  background-color: var(--color-danger);
+}
+
+.hp-text {
+  font-family: var(--font-pixel);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.stat-card {
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-md);
+  border: 2px solid var(--border-color);
+  text-align: center;
+}
+
+.stat-card h4 {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.stat-card p {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-accent-diamond);
+  margin-top: var(--spacing-sm);
+}

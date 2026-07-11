@@ -1,0 +1,45 @@
+/* src/styles/variables.css */
+:root {
+  /* Color Palette */
+  --color-bg-primary: #1e1e1e;
+  --color-bg-secondary: #2d2d2d;
+  --color-primary: #2e7d32; /* Forest Green */
+  --color-primary-dark: #1b5e20; /* Dark Green */
+  --color-accent: #fbc02d; /* Gold */
+  --color-accent-diamond: #00bcd4; /* Diamond Cyan */
+  --color-stone: #757575; /* Stone Gray */
+  --color-wood: #795548; /* Brown */
+  --color-coal: #212121; /* Coal Black */
+  --color-danger: #d32f2f; /* Red */
+  --color-xp: #ff9800; /* Orange */
+  --color-text-main: #ffffff;
+  --color-text-muted: #b0bec5;
+
+  /* Typography */
+  --font-heading: 'Press Start 2P', cursive;
+  --font-body: 'Inter', sans-serif;
+  --font-pixel: 'VT323', monospace;
+
+  /* Voxel/Pixel Style Borders */
+  --border-size: 4px;
+  --border-color: #000000;
+  
+  /* Box Shadows (Blocky) */
+  --shadow-block: 4px 4px 0px rgba(0, 0, 0, 1);
+  --shadow-block-hover: 6px 6px 0px rgba(0, 0, 0, 1);
+  --shadow-block-active: 2px 2px 0px rgba(0, 0, 0, 1);
+  
+  --shadow-block-inset: inset -4px -4px 0px rgba(0,0,0,0.4), inset 4px 4px 0px rgba(255,255,255,0.2);
+
+  /* Border Radius (Keep it minimal for blocky feel, except where appropriate) */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}

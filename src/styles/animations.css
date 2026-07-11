@@ -1,0 +1,47 @@
+/* src/styles/animations.css */
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes xp-gain {
+  0% { opacity: 0; transform: translateY(20px) scale(0.5); }
+  50% { opacity: 1; transform: translateY(-10px) scale(1.2); }
+  100% { opacity: 0; transform: translateY(-30px) scale(1); }
+}
+
+@keyframes level-up {
+  0% { transform: scale(0.8); opacity: 0; filter: brightness(1); }
+  50% { transform: scale(1.5); opacity: 1; filter: brightness(2); }
+  100% { transform: scale(1); opacity: 1; filter: brightness(1); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.anim-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.anim-pulse {
+  animation: pulse 2s infinite;
+}
+
+.xp-orb {
+  color: var(--color-xp);
+  text-shadow: 0 0 10px var(--color-xp);
+  animation: float 2s infinite;
+}

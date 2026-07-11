@@ -1,0 +1,74 @@
+/* src/pages/Skills/Skills.css */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.add-skill-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.add-skill-form input[type="text"] {
+  flex: 2;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-header h4 {
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.skill-level {
+  font-family: var(--font-heading);
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  text-shadow: 1px 1px 0 var(--color-coal);
+}
+
+.skill-category {
+  font-family: var(--font-pixel);
+  color: var(--color-stone);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.skill-progress {
+  margin: var(--spacing-sm) 0;
+}
+
+.skill-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.skill-actions .btn-accent {
+  flex: 1;
+  margin-right: var(--spacing-sm);
+}
