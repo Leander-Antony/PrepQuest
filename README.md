@@ -1,16 +1,32 @@
-# React + Vite
+# PrepQuest 🎮
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Turn your career grind into an epic 8-bit RPG! PrepQuest is a gamified productivity suite built to help developers, students, and engineers stay consistent and motivated. Master skills, build portfolio projects, and defeat interview bosses to secure your ultimate loot: The Offer Letter.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Gamified Dashboard:** Track your daily active streaks, level progression, and XP.
+- **Quest System (Daily/Custom Tasks):** Accept, track, and complete coding tasks for XP.
+- **Skill Tree:** Log hours in different programming languages (e.g., Python, React, Java) to organically level them up.
+- **Project Inventory:** Manage your portfolio projects from planning to 100% completion for massive XP rewards.
+- **Company Boss Fights:** Treat job applications like boss fights in the Placement arena. Track their HP as you progress through interview rounds!
+- **Activity Heatmap:** A GitHub-style 365-day visual tracker of your daily productivity and momentum.
+- **Achievement System:** Unlock auto-evaluating achievements as you level up, complete quests, and defeat bosses.
+- **Offline & Desktop Support:** Fully functional as a web application (PWA) and an installable native Windows Desktop `.exe`.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React (JavaScript), Context API
+- **Build Tool:** Vite
+- **Styling:** Custom CSS, Framer Motion (Animations), React Icons
+- **Data Visualization:** Recharts
+- **Desktop Wrapper:** Electron & Electron Packager
+- **Data Storage:** Pure LocalStorage (No backend required)
 
-## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 📦 Publishing
+
+- **Web Version:** Simply push this repository to GitHub and import it into [Vercel](https://vercel.com) or Netlify. It will automatically detect the Vite setup and deploy.
+- **Desktop Version:** Right-click the `PrepQuest-win32-x64` folder, compress it into a `.zip` file, and upload it to your GitHub Releases page!
+
+## 📝 License
+This project is open-source and available under the MIT License.
