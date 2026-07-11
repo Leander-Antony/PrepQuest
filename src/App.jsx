@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import AppLayout from './layout/AppLayout';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Quests from './pages/Quests/Quests';

@@ -18,6 +18,8 @@ function createWindow() {
     title: 'PrepQuest'
   });
 
+  mainWindow.setMenu(null); // Completely removes the top menu bar
+
   const isDev = process.env.NODE_ENV === 'development';
 
   // Inject a global variable or custom user agent to detect Electron
