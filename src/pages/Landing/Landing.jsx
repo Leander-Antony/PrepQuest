@@ -41,18 +41,6 @@ export default function Landing() {
             <p className="hero-subtitle">
               Turn your career grind into an epic 8-bit RPG. Master skills, build projects, and defeat interview bosses to secure your ultimate loot: The Offer Letter.
             </p>
-
-            <div className="landing-actions">
-              <button onClick={() => navigate('/dashboard')} className="landing-btn landing-btn-web">
-                <FaGlobe style={{ marginRight: '12px' }} />
-                Launch Web App
-              </button>
-              
-              <a href="https://github.com/Leander-Antony/MineQuest/releases/latest" target="_blank" rel="noreferrer" className="landing-btn landing-btn-desktop">
-                <FaWindows style={{ marginRight: '12px' }} />
-                Get for Windows
-              </a>
-            </div>
           </motion.div>
         </section>
 
@@ -156,7 +144,7 @@ export default function Landing() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <h2 className="hero-title" style={{ fontSize: '3rem', textShadow: 'none' }}>Ready to Play?</h2>
+            <h2 className="hero-title" style={{ fontSize: '3rem', textShadow: 'none' }}>Start Your Quest</h2>
             <div className="landing-actions" style={{ marginTop: '3rem' }}>
               <button onClick={() => navigate('/dashboard')} className="landing-btn landing-btn-web">
                 <FaGlobe style={{ marginRight: '12px' }} />
